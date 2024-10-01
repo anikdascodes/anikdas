@@ -1,0 +1,178 @@
+body {
+    font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+    background-color: #282c34;
+    color: #abb2bf;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    text-align: left;
+    padding: 20px;
+    background-color: #21252b;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.profile-img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 3px solid #61afef;
+    margin-right: 20px;
+    object-fit: cover;
+    box-shadow: 0 0 10px rgba(97, 175, 239, 0.5);
+}
+
+.header-text {
+    display: flex;
+    flex-direction: column;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 24px;
+    color: #e06c75;
+}
+
+.header p {
+    margin: 5px 0 0;
+    font-size: 14px;
+    color: #98c379;
+}
+
+.profile-img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    border: 2px solid #61afef;
+}
+
+.terminal {
+    background-color: #1e2127;
+    border: 2px solid #61afef;
+    border-radius: 5px;
+    margin: 20px auto;
+    max-width: 800px;
+    height: 400px;
+    overflow-y: auto;
+    padding: 10px;
+    position: relative;
+}
+
+.terminal-header {
+    background-color: #21252b;
+    padding: 5px;
+    border-bottom: 1px solid #61afef;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.terminal-title {
+    color: #abb2bf;
+    font-size: 14px;
+}
+
+.terminal-buttons {
+    display: flex;
+}
+
+.terminal-button {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-left: 5px;
+}
+
+.close { background-color: #e06c75; }
+.minimize { background-color: #e5c07b; }
+.maximize { background-color: #98c379; }
+
+.cursor {
+    display: inline-block;
+    width: 10px;
+    height: 18px;
+    background-color: #61afef;
+    animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+    0% { opacity: 0; }
+    50% { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+.syntax-command { color: #c678dd; }
+.syntax-path { color: #98c379; }
+.syntax-output { color: #abb2bf; }
+
+.input-line {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.prompt {
+    color: #98c379;
+    margin-right: 10px;
+}
+
+#user-input {
+    background-color: transparent;
+    border: none;
+    color: #e06c75;
+    font-family: 'Consolas', 'Monaco', 'Courier New', monospace;
+    font-size: 16px;
+    flex-grow: 1;
+    outline: none;
+}
+
+.output {
+    white-space: pre-wrap;
+    margin-bottom: 10px;
+}
+
+.social-links {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.social-links a {
+    color: #61afef;
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+.social-links a:hover {
+    color: #c678dd;
+    text-decoration: underline;
+}
+
+/* Scrollbar styles */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #282c34;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #4b5263;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #5c6370;
+}
+
+/* Add this to your existing styles */
+.resume-link {
+    color: #61afef;
+    text-decoration: none;
+}
+
+.resume-link:hover {
+    text-decoration: underline;
+}
